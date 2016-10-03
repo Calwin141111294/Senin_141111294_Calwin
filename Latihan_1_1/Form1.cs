@@ -45,14 +45,16 @@ namespace Latihan_1_1
 
         }
 
-        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
+
+
+        private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
-            label1.Text = ((VScrollBar)sender).Value.ToString();
+            label1.Text = ((HScrollBar)sender).Value.ToString();
         }
 
-        private void vScrollBar2_Scroll(object sender, ScrollEventArgs e)
+        private void hScrollBar2_Scroll(object sender, ScrollEventArgs e)
         {
-            label2.Text = ((VScrollBar)sender).Value.ToString();
+            label2.Text = ((HScrollBar)sender).Value.ToString();
         }
 
  
