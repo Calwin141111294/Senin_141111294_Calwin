@@ -32,13 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.hScrollBar2 = new System.Windows.Forms.HScrollBar();
+            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
-            this.hScrollBar2 = new System.Windows.Forms.HScrollBar();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -70,6 +70,27 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // hScrollBar2
+            // 
+            this.hScrollBar2.LargeChange = 1;
+            this.hScrollBar2.Location = new System.Drawing.Point(260, 126);
+            this.hScrollBar2.Maximum = 10;
+            this.hScrollBar2.Name = "hScrollBar2";
+            this.hScrollBar2.Size = new System.Drawing.Size(101, 15);
+            this.hScrollBar2.TabIndex = 0;
+            this.hScrollBar2.Value = 10;
+            this.hScrollBar2.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar2_Scroll);
+            // 
+            // hScrollBar1
+            // 
+            this.hScrollBar1.LargeChange = 1;
+            this.hScrollBar1.Location = new System.Drawing.Point(30, 126);
+            this.hScrollBar1.Maximum = 10;
+            this.hScrollBar1.Name = "hScrollBar1";
+            this.hScrollBar1.Size = new System.Drawing.Size(108, 15);
+            this.hScrollBar1.TabIndex = 0;
+            this.hScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar1_Scroll);
             // 
             // label2
             // 
@@ -116,27 +137,6 @@
             this.imageList1.Images.SetKeyName(0, "pic A.jpg");
             this.imageList1.Images.SetKeyName(1, "pic b.png");
             // 
-            // hScrollBar1
-            // 
-            this.hScrollBar1.LargeChange = 1;
-            this.hScrollBar1.Location = new System.Drawing.Point(30, 126);
-            this.hScrollBar1.Maximum = 10;
-            this.hScrollBar1.Name = "hScrollBar1";
-            this.hScrollBar1.Size = new System.Drawing.Size(108, 15);
-            this.hScrollBar1.TabIndex = 0;
-            this.hScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar1_Scroll);
-            // 
-            // hScrollBar2
-            // 
-            this.hScrollBar2.LargeChange = 1;
-            this.hScrollBar2.Location = new System.Drawing.Point(260, 126);
-            this.hScrollBar2.Maximum = 10;
-            this.hScrollBar2.Name = "hScrollBar2";
-            this.hScrollBar2.Size = new System.Drawing.Size(101, 15);
-            this.hScrollBar2.TabIndex = 0;
-            this.hScrollBar2.Value = 10;
-            this.hScrollBar2.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar2_Scroll);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -144,7 +144,7 @@
             this.ClientSize = new System.Drawing.Size(613, 404);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Latihan 1";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
