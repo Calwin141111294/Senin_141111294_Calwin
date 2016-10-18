@@ -50,8 +50,7 @@ namespace Latihan_3_1
         private void toolUnderline_Click(object sender, EventArgs e)
         {
             Font new1, old;
-            old = richTextBox1.Select
-            ionFont;
+            old = richTextBox1.SelectionFont;
             if (old.Underline)
             {
                 new1 = new Font(old, old.Style & ~FontStyle.Underline);
