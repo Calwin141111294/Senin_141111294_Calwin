@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
-namespace Latihan_4_1
+namespace Latihan_5_1
 {
     public partial class Form1 : Form
     {
@@ -32,9 +32,6 @@ namespace Latihan_4_1
             foreach (KnownColor kc in Enum.GetValues(typeof(KnownColor)))
             {
                 cmbColor.Items.Add(kc);
-            }
-            foreach (KnownColor kc in Enum.GetValues(typeof(KnownColor)))
-            {
                 cmbBackColor.Items.Add(kc);
             }
             cmbSize.SelectedIndex = 2;
@@ -195,6 +192,71 @@ namespace Latihan_4_1
             richTextBox1.SelectionBackColor = Color.FromName(cmbBackColor.Text);
         }
 
+        private void richTextBox1_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == System.Windows.Forms.MouseButtons.Right)
+            {
+                if (richTextBox1.SelectionLength == 0)
+                {
+                    contextMenuStrip1.Items[0].Enabled = false;
+                    contextMenuStrip1.Items[1].Enabled = false;
+                    //contextMenuStrip1.Items[3].Enabled = false;
+                }
+                else
+                {
+                    contextMenuStrip1.Items[0].Enabled = true;
+                    contextMenuStrip1.Items[1].Enabled = true;
+                    //contextMenuStrip1.Items[3].Enabled = true;
+                }
+                contextMenuStrip1.Show(Cursor.Position.X, Cursor.Position.Y);
+            }
+        }
+
+        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Copy();
+        }
+
+               
+        private void cutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Cut();
+
+        }
+
+        private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = Clipboard.GetText();
+        }
+        public void bgColor(string color)
+        {
+            richTextBox1.SelectionBackColor = Color.FromName(cmbBackColor.Text);
+        }
+        public string getColor()
+        {
+            return richTextBox1.BackColor.Name;
+        }
+        Editor edit;
+        private void editorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+             if (edit == null || !edit.IsHandleCreated)
+            {
+                edit = new Editor();
+                edit.MdiParent = this;
+                edit.BringToFront();
+                richTextBox1.SendToBack();
+                edit.Show();
+            }
+            else
+            {
+                edit.Show();
+            }
+         
+        }
+        public void shw()
+        {
+            richTextBox1.BringToFront();
+        }
 
     }
 }

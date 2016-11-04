@@ -1,0 +1,10 @@
+D:\Senin_141111294_Calwin\Latihan_5_1\bin\Debug\Latihan_4_1.exe.config
+D:\Senin_141111294_Calwin\Latihan_5_1\obj\Debug\Latihan_4_1.exe
+D:\Senin_141111294_Calwin\Latihan_5_1\obj\Debug\Latihan_4_1.pdb
+D:\Senin_141111294_Calwin\Latihan_5_1\obj\Debug\Latihan_5_1.Form1.resources
+D:\Senin_141111294_Calwin\Latihan_5_1\obj\Debug\Latihan_4_1.Properties.Resources.resources
+D:\Senin_141111294_Calwin\Latihan_5_1\obj\Debug\Latihan_5_1.csproj.GenerateResource.Cache
+D:\Senin_141111294_Calwin\Latihan_5_1\bin\Debug\Latihan_4_1.exe
+D:\Senin_141111294_Calwin\Latihan_5_1\bin\Debug\Latihan_4_1.pdb
+D:\Senin_141111294_Calwin\Latihan_5_1\obj\Debug\Latihan_5_1.Editor.resources
+D:\Senin_141111294_Calwin\Latihan_5_1\obj\Debug\Latihan_5_1.csprojResolveAssemblyReference.cache
