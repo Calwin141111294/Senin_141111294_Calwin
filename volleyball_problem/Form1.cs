@@ -72,7 +72,7 @@ namespace volleyball_problem
                 x *= x;
                 x %= mod;
             }
-            MessageBox.Show(result.ToString());
+            //MessageBox.Show(result.ToString());
             return result % mod;
             
         }
@@ -99,7 +99,7 @@ namespace volleyball_problem
             {
                 TxtHasil.Text = "0";
             }
-            else if (a == 25 && a - b <=2)
+            else if (a == 25 && a - b !=2)
             {
                 hasil = (long)pascal(a - 1, b,mod);
                 TxtHasil.Text = hasil.ToString();   
