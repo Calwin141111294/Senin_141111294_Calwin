@@ -1,0 +1,10 @@
+D:\Senin_141111294_Calwin\Latihan_POS\bin\Debug\Latihan_POS.exe.config
+D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.csprojResolveAssemblyReference.cache
+D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.formHome.resources
+D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.formRegistrasi.resources
+D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.Properties.Resources.resources
+D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.csproj.GenerateResource.Cache
+D:\Senin_141111294_Calwin\Latihan_POS\bin\Debug\Latihan_POS.exe
+D:\Senin_141111294_Calwin\Latihan_POS\bin\Debug\Latihan_POS.pdb
+D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.exe
+D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.pdb
