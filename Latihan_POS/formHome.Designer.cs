@@ -33,6 +33,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.registrasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolBarang = new System.Windows.Forms.ToolStripMenuItem();
+            this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.supplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +56,9 @@
             // registrasiToolStripMenuItem
             // 
             this.registrasiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolBarang});
+            this.toolBarang,
+            this.customerToolStripMenuItem,
+            this.supplierToolStripMenuItem});
             this.registrasiToolStripMenuItem.Name = "registrasiToolStripMenuItem";
             this.registrasiToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.registrasiToolStripMenuItem.Text = "Registrasi";
@@ -65,6 +69,20 @@
             this.toolBarang.Size = new System.Drawing.Size(152, 22);
             this.toolBarang.Text = "Barang";
             this.toolBarang.Click += new System.EventHandler(this.toolBarang_Click);
+            // 
+            // customerToolStripMenuItem
+            // 
+            this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
+            this.customerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.customerToolStripMenuItem.Text = "Customer";
+            this.customerToolStripMenuItem.Click += new System.EventHandler(this.customerToolStripMenuItem_Click);
+            // 
+            // supplierToolStripMenuItem
+            // 
+            this.supplierToolStripMenuItem.Name = "supplierToolStripMenuItem";
+            this.supplierToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.supplierToolStripMenuItem.Text = "Supplier";
+            this.supplierToolStripMenuItem.Click += new System.EventHandler(this.supplierToolStripMenuItem_Click);
             // 
             // formHome
             // 
@@ -88,5 +106,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem registrasiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolBarang;
+        private System.Windows.Forms.ToolStripMenuItem customerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem supplierToolStripMenuItem;
     }
 }

@@ -20,8 +20,22 @@ namespace Latihan_POS
         private void toolBarang_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form Tambah = new formRegistrasi();
+            Form Tambah = new formRegistrasiBarang();
             Tambah.Show();
+        }
+
+        private void customerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form Customer = new FormRegistrasiCustomer();
+            Customer.Show();
+        }
+
+        private void supplierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form Supplier = new FormRegistrasiSupplier();
+            Supplier.Show();
         }
     }
 }

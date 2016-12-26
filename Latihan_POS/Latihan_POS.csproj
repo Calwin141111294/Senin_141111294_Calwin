@@ -45,25 +45,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Registrasi.cs" />
     <Compile Include="formHome.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formHome.Designer.cs">
       <DependentUpon>formHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="formRegistrasi.cs">
+    <Compile Include="formRegistrasiBarang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formRegistrasi.Designer.cs">
-      <DependentUpon>formRegistrasi.cs</DependentUpon>
+    <Compile Include="formRegistrasiBarang.Designer.cs">
+      <DependentUpon>formRegistrasiBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrasiCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrasiCustomer.Designer.cs">
+      <DependentUpon>FormRegistrasiCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrasiSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrasiSupplier.Designer.cs">
+      <DependentUpon>FormRegistrasiSupplier.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="formHome.resx">
       <DependentUpon>formHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formRegistrasi.resx">
-      <DependentUpon>formRegistrasi.cs</DependentUpon>
+    <EmbeddedResource Include="formRegistrasiBarang.resx">
+      <DependentUpon>formRegistrasiBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrasiCustomer.resx">
+      <DependentUpon>FormRegistrasiCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrasiSupplier.resx">
+      <DependentUpon>FormRegistrasiSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

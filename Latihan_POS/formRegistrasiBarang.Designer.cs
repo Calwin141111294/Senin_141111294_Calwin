@@ -1,6 +1,6 @@
 ﻿namespace Latihan_POS
 {
-    partial class formRegistrasi
+    partial class formRegistrasiBarang
     {
         /// <summary>
         /// Required designer variable.
