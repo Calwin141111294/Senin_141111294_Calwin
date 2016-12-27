@@ -7,4 +7,3 @@ D:\Senin_141111294_Calwin\Latihan_5_1\obj\Debug\Latihan_5_1.csproj.GenerateResou
 D:\Senin_141111294_Calwin\Latihan_5_1\bin\Debug\Latihan_4_1.exe
 D:\Senin_141111294_Calwin\Latihan_5_1\bin\Debug\Latihan_4_1.pdb
 D:\Senin_141111294_Calwin\Latihan_5_1\obj\Debug\Latihan_5_1.Editor.resources
-D:\Senin_141111294_Calwin\Latihan_5_1\obj\Debug\Latihan_5_1.csprojResolveAssemblyReference.cache

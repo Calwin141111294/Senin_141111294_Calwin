@@ -41,6 +41,22 @@ namespace Latihan_POS
             }
         }
 
+        private void btnKeluar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form Home = new formRegis();
+            Home.Show();
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            txtAlamat.Text = "";
+            txtKode.Text = "";
+            txtKota.Text = "";
+            txtNama.Text = "";
+            txtNoHP.Text = "";
+        }
+
         
 
     }

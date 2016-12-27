@@ -49,7 +49,7 @@ namespace Latihan_POS
         private void txtKeluar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form Home = new formHome();
+            Form Home = new formRegis();
             Home.Show();
         }
     }

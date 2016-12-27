@@ -41,6 +41,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
             // txtKode
@@ -153,7 +154,11 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // formRegistrasi
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            // 
+            // formRegistrasiBarang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -171,7 +176,7 @@
             this.Controls.Add(this.txtJumlah);
             this.Controls.Add(this.txtNama);
             this.Controls.Add(this.txtKode);
-            this.Name = "formRegistrasi";
+            this.Name = "formRegistrasiBarang";
             this.Text = "point_of_sales";
             this.Load += new System.EventHandler(this.formRegistrasi_Load);
             this.ResumeLayout(false);
@@ -194,6 +199,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

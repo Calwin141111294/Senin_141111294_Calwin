@@ -1,5 +1,4 @@
 D:\Senin_141111294_Calwin\volleyball_problem\bin\Debug\volleyball_problem.exe.config
-D:\Senin_141111294_Calwin\volleyball_problem\obj\Debug\volleyball_problem.csprojResolveAssemblyReference.cache
 D:\Senin_141111294_Calwin\volleyball_problem\obj\Debug\volleyball_problem.Form1.resources
 D:\Senin_141111294_Calwin\volleyball_problem\obj\Debug\volleyball_problem.Properties.Resources.resources
 D:\Senin_141111294_Calwin\volleyball_problem\obj\Debug\volleyball_problem.csproj.GenerateResource.Cache

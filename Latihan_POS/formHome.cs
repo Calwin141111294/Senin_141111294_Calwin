@@ -37,5 +37,40 @@ namespace Latihan_POS
             Form Supplier = new FormRegistrasiSupplier();
             Supplier.Show();
         }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form Edit = new FormEdit();
+            Edit.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            formRegis regis = new formRegis();
+            regis.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormEdit edit = new FormEdit();
+            edit.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormDelete delete = new FormDelete();
+            delete.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormListItem list = new FormListItem();
+            list.Show();
+        }
     }
 }

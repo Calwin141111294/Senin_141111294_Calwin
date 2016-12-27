@@ -10,3 +10,10 @@ D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.pdb
 D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.formRegistrasiBarang.resources
 D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.FormRegistrasiCustomer.resources
 D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.FormRegistrasiSupplier.resources
+D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.FormEdit.resources
+D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.FormDelete.resources
+D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.FormListBarang.resources
+D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.FormListCustomer.resources
+D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.FormListSupplier.resources
+D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.formRegis.resources
+D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.FormListItem.resources

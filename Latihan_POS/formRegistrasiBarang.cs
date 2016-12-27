@@ -28,7 +28,7 @@ namespace Latihan_POS
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form Home = new formHome();
+            Form Home = new formRegis();
             Home.Show();
         }
 
@@ -61,6 +61,11 @@ namespace Latihan_POS
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+
         }
     }
 }

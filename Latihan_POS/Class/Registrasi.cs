@@ -101,7 +101,8 @@ namespace Latihan_POS.Class
         public void tambahBarang(string kode, string nama, string jumlah, string hargaAwal, string hargaJual)
         {
             conn = new MySqlConnection(connString);
-            if (cekKode("kodeBarang",kode))
+            
+            if (cekKode("kodebarang",kode))
             {
                 MessageBox.Show("Kode Telah Digunakan");
                 return;
@@ -134,18 +135,18 @@ namespace Latihan_POS.Class
                 DateTime update = DateTime.Now;
                 String waktuUpdate = update.ToString("yyyy/MM/dd HH:mm:ss");
                 MySqlCommand cmd = conn.CreateCommand();
-                
-                string insert = "INSERT INTO tblbarang (kode,nama,jumlahawal,hargahpp,hargajual,createdate,updatedate)";
-                insert += " VALUES (@kode,@nama,@jumlah,@hargaAwal,@hargaJual,@waktuNow,@waktuUpdate)";
-                
+
+                string insert = "INSERT INTO tblbarang (kodeBarang,nama,jumlahawal,hargahpp,hargajual,createDate,updateDate)";
+                insert += " VALUES (@kode,@nama,@jumlah,@hargahpp,@hargajual,@createDate,@updatedate)";
+
                 cmd.CommandText = insert;
                 cmd.Parameters.AddWithValue("@kode", kode);
                 cmd.Parameters.AddWithValue("@nama", nama);
                 cmd.Parameters.AddWithValue("@jumlah", jumlah);
-                cmd.Parameters.AddWithValue("@hargaAwal",Convert.ToDecimal(hargaAwal) );
-                cmd.Parameters.AddWithValue("@hargaJual", Convert.ToDecimal(hargaJual));
-                cmd.Parameters.AddWithValue("@waktuNow", waktuNow);
-                cmd.Parameters.AddWithValue("@waktuUpdate", waktuUpdate);
+                cmd.Parameters.AddWithValue("@hargahpp", hargaAwal);
+                cmd.Parameters.AddWithValue("@hargajual", hargaJual);
+                cmd.Parameters.AddWithValue("@createDate", waktuNow);
+                cmd.Parameters.AddWithValue("@updatedate", waktuUpdate);
 
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Tambah Barang Sukses");
@@ -163,6 +164,9 @@ namespace Latihan_POS.Class
         public void tambahCustomer(string nama,string alamat,string nohp)
         {
             conn = new MySqlConnection(connString);
+            Status status = new Status();
+            bool hsl = status.cekKode(nama, "Customer");
+            MessageBox.Show(Convert.ToString(hsl));
             if (nama == "")
             {
                 MessageBox.Show("Nama Tidak boleh kosong");
@@ -183,36 +187,44 @@ namespace Latihan_POS.Class
                 MessageBox.Show("noHp telah digunakan BOS");
                 return;
             }
-            try
+            if (hsl)
             {
-                conn.Open();
-                DateTime sekarang = DateTime.Now;
-                String waktuNow = sekarang.ToString("yyyy/MM/dd HH:mm:ss");
-                DateTime update = DateTime.Now;
-                String waktuUpdate = update.ToString("yyyy/MM/dd HH:mm:ss");
-                MySqlCommand cmd = conn.CreateCommand();
-
-                string insert = "INSERT INTO tblcustomer (nama_customer,alamat_customer,noHP,createdate,updatedate)";
-                insert += " VALUES (@nama,@alamat,@noHP,@waktuNow,@waktuUpdate)";
-
-                cmd.CommandText = insert;
-                cmd.Parameters.AddWithValue("@nama",nama );
-                cmd.Parameters.AddWithValue("@alamat", alamat);
-                cmd.Parameters.AddWithValue("@noHP", nohp);
-                cmd.Parameters.AddWithValue("@waktuNow", waktuNow);
-                cmd.Parameters.AddWithValue("@waktuUpdate", waktuUpdate);
-
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Tambah Customer Sukses");
+                MessageBox.Show("Kode sudah dipakai");
             }
-            catch(Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                try
+                {
+                    conn.Open();
+                    DateTime sekarang = DateTime.Now;
+                    String waktuNow = sekarang.ToString("yyyy/MM/dd HH:mm:ss");
+                    DateTime update = DateTime.Now;
+                    String waktuUpdate = update.ToString("yyyy/MM/dd HH:mm:ss");
+                    MySqlCommand cmd = conn.CreateCommand();
+
+                    string insert = "INSERT INTO tblcustomer (nama_customer,alamat_customer,noHPCustomer,createdate,updatedate)";
+                    insert += " VALUES (@nama,@alamat,@noHP,@waktuNow,@waktuUpdate)";
+
+                    cmd.CommandText = insert;
+                    cmd.Parameters.AddWithValue("@nama", nama);
+                    cmd.Parameters.AddWithValue("@alamat", alamat);
+                    cmd.Parameters.AddWithValue("@noHP", nohp);
+                    cmd.Parameters.AddWithValue("@waktuNow", waktuNow);
+                    cmd.Parameters.AddWithValue("@waktuUpdate", waktuUpdate);
+
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Tambah Customer Sukses");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    conn.Close();
+                }
             }
-            finally
-            {
-                conn.Close();
-            }
+            
         }
        public void tambahSupplier(string kode,string nama,string alamat,string noHP,string kota)
         {
@@ -256,7 +268,7 @@ namespace Latihan_POS.Class
                 String waktuUpdate = update.ToString("yyyy/MM/dd HH:mm:ss");
                 MySqlCommand cmd = conn.CreateCommand();
 
-                string insert = "INSERT INTO tblsupplier (kodeSupplier,nama,alamat,kota,noHP,createDate,updateDate)";
+                string insert = "INSERT INTO tblsupplier (kodeSupplier,nama,alamat,kota,noHPSupplier,createDate,updateDate)";
                 insert += " VALUES (@kode,@nama,@alamat,@kota,@noHP,@createDate,@updatedate)";
 
                 cmd.CommandText = insert;

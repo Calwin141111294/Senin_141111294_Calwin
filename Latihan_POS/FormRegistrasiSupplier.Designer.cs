@@ -141,6 +141,7 @@
             this.btnReset.TabIndex = 11;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnKeluar
             // 
@@ -150,6 +151,7 @@
             this.btnKeluar.TabIndex = 12;
             this.btnKeluar.Text = "Keluar";
             this.btnKeluar.UseVisualStyleBackColor = true;
+            this.btnKeluar.Click += new System.EventHandler(this.btnKeluar_Click);
             // 
             // FormRegistrasiSupplier
             // 
