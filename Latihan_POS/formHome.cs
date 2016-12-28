@@ -72,5 +72,12 @@ namespace Latihan_POS
             FormListItem list = new FormListItem();
             list.Show();
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormJual jual = new FormJual();
+            jual.Show();
+        }
     }
 }

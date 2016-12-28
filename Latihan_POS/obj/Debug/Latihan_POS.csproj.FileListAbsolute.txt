@@ -17,3 +17,4 @@ D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.FormListCustomer.res
 D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.FormListSupplier.resources
 D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.formRegis.resources
 D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.FormListItem.resources
+D:\Senin_141111294_Calwin\Latihan_POS\obj\Debug\Latihan_POS.FormJual.resources

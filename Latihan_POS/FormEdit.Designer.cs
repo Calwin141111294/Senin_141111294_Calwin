@@ -353,6 +353,7 @@
             // 
             // pnlCustomer
             // 
+            this.pnlCustomer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlCustomer.Controls.Add(this.btnSimpanCustomer);
             this.pnlCustomer.Controls.Add(this.label18);
             this.pnlCustomer.Controls.Add(this.label11);
@@ -457,7 +458,6 @@
             this.cmbCari.Name = "cmbCari";
             this.cmbCari.Size = new System.Drawing.Size(201, 21);
             this.cmbCari.TabIndex = 3;
-
             // 
             // Jenis
             // 

@@ -68,6 +68,12 @@
     <Compile Include="formHome.Designer.cs">
       <DependentUpon>formHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormJual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJual.Designer.cs">
+      <DependentUpon>FormJual.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormListBarang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formHome.resx">
       <DependentUpon>formHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJual.resx">
+      <DependentUpon>FormJual.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormListBarang.resx">
       <DependentUpon>FormListBarang.cs</DependentUpon>
