@@ -20,15 +20,15 @@ namespace Latihan_POS
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            formRegistrasiBarang brang = new formRegistrasiBarang();
-            brang.Show();
+            Form customer = new FormRegistrasiCustomer();
+            customer.Show();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormRegistrasiCustomer customer = new FormRegistrasiCustomer();
-            customer.Show();
+            Form barang = new formRegistrasiBarang();
+            barang.Show();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegistrasiCustomer));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,11 +38,13 @@
             this.txtSimpan = new System.Windows.Forms.Button();
             this.txtReset = new System.Windows.Forms.Button();
             this.txtKeluar = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(42, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 13);
@@ -51,6 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(42, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 13);
@@ -60,6 +64,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(42, 133);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 13);
@@ -117,11 +122,25 @@
             this.txtKeluar.UseVisualStyleBackColor = true;
             this.txtKeluar.Click += new System.EventHandler(this.txtKeluar_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label4.Location = new System.Drawing.Point(140, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(159, 20);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Register Customer";
+            // 
             // FormRegistrasiCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(418, 279);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtKeluar);
             this.Controls.Add(this.txtReset);
             this.Controls.Add(this.txtSimpan);
@@ -133,7 +152,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormRegistrasiCustomer";
             this.Text = "FormRegistrasiCustomer";
-            this.Load += new System.EventHandler(this.FormRegistrasiCustomer_Load);
+
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,5 +169,6 @@
         private System.Windows.Forms.Button txtSimpan;
         private System.Windows.Forms.Button txtReset;
         private System.Windows.Forms.Button txtKeluar;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -8,7 +8,7 @@ using System.Collections;
 using System.Windows.Forms;
 namespace Latihan_POS.Class
 {
-    class WhenYouSeeMe
+    class fill
     {
         public void fillTable(DataGridView dgvBarang)
         {
@@ -89,7 +89,7 @@ namespace Latihan_POS.Class
 
             conn.Close();
         }
-        public void fillJual(DataGridView dgvJual,TextBox harga)
+        public void fillJual(DataGridView dgvJual,Label harga)
         {
             MySqlConnection conn;
             String ConnString = "Server=Localhost; Database=latihan_pos; Uid=root; Pwd='';";
@@ -114,11 +114,36 @@ namespace Latihan_POS.Class
                 //hargaJ += Convert.ToInt32(reader.GetString(5).ToString());
                 dgvJual.Rows.Add(row);
             }
-            harga.Text = Convert.ToString(hargaJ);
+            harga.Text = String.Format("{0:C},00",hargaJ);
             conn.Close();
         }
+        public void fillBeli(DataGridView dgvJual, Label harga)
+        {
+            MySqlConnection conn;
+            String ConnString = "Server=Localhost; Database=latihan_pos; Uid=root; Pwd='';";
+            MySqlCommand cmd;
+            MySqlDataReader reader;
+            conn = new MySqlConnection(ConnString);
+            dgvJual.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgvJual.Rows.Clear();
+            dgvJual.Refresh();
+            String sql = "SELECT * FROM tblpembelian";
 
+            conn.Open();
+            cmd = new MySqlCommand(sql, conn);
+            reader = cmd.ExecuteReader();
+            int hargaJ = 0;
+            while (reader.Read())
+            {
 
-     
+                DataGridViewRow row = new DataGridViewRow();
+                row.CreateCells(dgvJual, reader.GetString(0).ToString(), reader.GetString(1).ToString(), reader.GetString(2).ToString(), reader.GetString(3).ToString(), reader.GetString(4).ToString(), reader.GetString(5).ToString(), reader.GetDateTime(6).ToString("dd-MM-yyyy HH:mm:ss"));
+                hargaJ += reader.GetInt32(5);
+                //hargaJ += Convert.ToInt32(reader.GetString(5).ToString());
+                dgvJual.Rows.Add(row);
+            }
+            harga.Text = String.Format("{0:C},00", hargaJ);
+            conn.Close();
+        }
     }
 }

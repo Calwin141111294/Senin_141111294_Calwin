@@ -44,5 +44,6 @@ namespace Latihan_POS
             formHome home = new formHome();
             home.Show();
         }
+
     }
 }

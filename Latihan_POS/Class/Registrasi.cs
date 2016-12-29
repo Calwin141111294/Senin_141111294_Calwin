@@ -166,7 +166,7 @@ namespace Latihan_POS.Class
             conn = new MySqlConnection(connString);
             Status status = new Status();
             bool hsl = status.cekKode(nama, "Customer");
-            MessageBox.Show(Convert.ToString(hsl));
+            //MessageBox.Show(Convert.ToString(hsl));
             if (nama == "")
             {
                 MessageBox.Show("Nama Tidak boleh kosong");

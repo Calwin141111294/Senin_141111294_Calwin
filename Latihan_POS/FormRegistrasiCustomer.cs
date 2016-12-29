@@ -19,10 +19,7 @@ namespace Latihan_POS
             InitializeComponent();
         }
 
-        private void FormRegistrasiCustomer_Load(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void txtSimpan_Click(object sender, EventArgs e)
         {

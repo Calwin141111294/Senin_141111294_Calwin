@@ -76,8 +76,25 @@ namespace Latihan_POS
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormJual jual = new FormJual();
+            FormPenjualan jual = new FormPenjualan();
             jual.Show();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormPembelian beli = new FormPembelian();
+            beli.Show();
+        }
+
+        private void formHome_Closed(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void formHome_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

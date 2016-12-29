@@ -79,5 +79,6 @@ namespace Latihan_POS.Class
                 conn.Close();
             }
         }
+        
     }
 }

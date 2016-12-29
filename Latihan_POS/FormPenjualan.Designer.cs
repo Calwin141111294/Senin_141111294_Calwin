@@ -1,6 +1,6 @@
 ﻿namespace Latihan_POS
 {
-    partial class FormJual
+    partial class FormPenjualan
     {
         /// <summary>
         /// Required designer variable.
@@ -42,8 +42,6 @@
             this.txtHargaBarang = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvPenjualan = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtTotal = new System.Windows.Forms.TextBox();
             this.ID_Barang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NamaCu = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +49,9 @@
             this.harga = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hargaakhir = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.waktu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblHarga = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPenjualan)).BeginInit();
             this.SuspendLayout();
@@ -189,22 +190,6 @@
             this.dgvPenjualan.Size = new System.Drawing.Size(681, 252);
             this.dgvPenjualan.TabIndex = 15;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(421, 536);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 13);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Total Penjualan";
-            // 
-            // txtTotal
-            // 
-            this.txtTotal.Location = new System.Drawing.Point(508, 529);
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(163, 20);
-            this.txtTotal.TabIndex = 17;
-            // 
             // ID_Barang
             // 
             this.ID_Barang.HeaderText = "ID";
@@ -243,12 +228,44 @@
             this.waktu.Name = "waktu";
             this.waktu.Width = 140;
             // 
-            // FormJual
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(253, 529);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(133, 20);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Total Penjualan";
+            // 
+            // lblHarga
+            // 
+            this.lblHarga.AutoSize = true;
+            this.lblHarga.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblHarga.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHarga.Location = new System.Drawing.Point(425, 526);
+            this.lblHarga.Name = "lblHarga";
+            this.lblHarga.Size = new System.Drawing.Size(56, 23);
+            this.lblHarga.TabIndex = 17;
+            this.lblHarga.Text = "label";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(22, 529);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(156, 23);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // FormPenjualan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(729, 561);
-            this.Controls.Add(this.txtTotal);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblHarga);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dgvPenjualan);
             this.Controls.Add(this.panel1);
@@ -257,7 +274,7 @@
             this.Controls.Add(this.txtNamaCust);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "FormJual";
+            this.Name = "FormPenjualan";
             this.Text = "FormJual";
             this.Load += new System.EventHandler(this.FormJual_Load);
             this.panel1.ResumeLayout(false);
@@ -285,7 +302,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dgvPenjualan;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_Barang;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nama;
         private System.Windows.Forms.DataGridViewTextBoxColumn NamaCu;
@@ -293,5 +309,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn harga;
         private System.Windows.Forms.DataGridViewTextBoxColumn hargaakhir;
         private System.Windows.Forms.DataGridViewTextBoxColumn waktu;
+        private System.Windows.Forms.Label lblHarga;
+        private System.Windows.Forms.Button button1;
     }
 }

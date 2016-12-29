@@ -74,5 +74,36 @@ namespace Latihan_POS.Class
             return hasil;
         }
 
+        public void cariKode(String kode,TextBox nama,TextBox harga,ComboBox cmb)
+        {
+            conn = new MySqlConnection(connString);
+            MySqlDataReader reader;
+            try
+            {
+                conn.Open();
+                string sql = "SELECT nama,jumlahawal,hargajual FROM tblBarang where kodeBarang = '" + kode + "'";
+                //        MessageBox.Show(sql);
+                cmd = new MySqlCommand(sql, conn);
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+
+                    nama.Text = reader.GetString(0);
+                    harga.Text = reader.GetString(2);
+                    string banyak = reader.GetString(1);
+
+                    for (int i = 1; i < Convert.ToInt32(banyak); i++)
+                    {
+                        cmb.Items.Add(i);
+                    }
+
+                }
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }

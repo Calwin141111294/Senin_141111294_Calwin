@@ -47,7 +47,8 @@
   <ItemGroup>
     <Compile Include="Class\Delete.cs" />
     <Compile Include="Class\Edit.cs" />
-    <Compile Include="Class\WhenYouSeeMe.cs" />
+    <Compile Include="Class\Transaksi.cs" />
+    <Compile Include="Class\fill.cs" />
     <Compile Include="Class\Registrasi.cs" />
     <Compile Include="Class\Status.cs" />
     <Compile Include="FormDelete.cs">
@@ -68,11 +69,11 @@
     <Compile Include="formHome.Designer.cs">
       <DependentUpon>formHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormJual.cs">
+    <Compile Include="FormPenjualan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormJual.Designer.cs">
-      <DependentUpon>FormJual.cs</DependentUpon>
+    <Compile Include="FormPenjualan.Designer.cs">
+      <DependentUpon>FormPenjualan.cs</DependentUpon>
     </Compile>
     <Compile Include="FormListBarang.cs">
       <SubType>Form</SubType>
@@ -97,6 +98,12 @@
     </Compile>
     <Compile Include="FormListSupplier.Designer.cs">
       <DependentUpon>FormListSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPembelian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPembelian.Designer.cs">
+      <DependentUpon>FormPembelian.cs</DependentUpon>
     </Compile>
     <Compile Include="formRegis.cs">
       <SubType>Form</SubType>
@@ -133,8 +140,8 @@
     <EmbeddedResource Include="formHome.resx">
       <DependentUpon>formHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormJual.resx">
-      <DependentUpon>FormJual.cs</DependentUpon>
+    <EmbeddedResource Include="FormPenjualan.resx">
+      <DependentUpon>FormPenjualan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormListBarang.resx">
       <DependentUpon>FormListBarang.cs</DependentUpon>
@@ -147,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormListSupplier.resx">
       <DependentUpon>FormListSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPembelian.resx">
+      <DependentUpon>FormPembelian.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formRegis.resx">
       <DependentUpon>formRegis.cs</DependentUpon>
